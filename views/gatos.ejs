@@ -1,0 +1,15 @@
+<html>
+
+<body>
+    <header>
+        <h2>EJS de Gatos</h2>
+    </header>
+    
+    <div>
+        <% for (let i in gatos) { %>
+            <a href="/gatos/<%= i %>"><img src="<%= gatos[i].img %>" height="140px" width="140px" alt=""></a>
+            <br>
+        <% } %>  
+    </div>
+</body>
+</html>
